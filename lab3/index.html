@@ -6,20 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook</title>
     <style>
-        table,
-        td {
-            border: 1px solid black;
+        body {
+            width: 800px;
         }
 
-        .head-btn a {
+        table {
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid black;
+
+        }
+
+        a {
             text-decoration: none;
             margin-left: 20px;
+            color: rgb(56, 139, 241);
         }
 
         h2 {
             display: block;
             background-color: aqua;
-            margin: 0;
+            margin: 10px 0 0 0;
+            width: 100%;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .info-body {
+            display: flex;
+            margin-left: 10px;
         }
     </style>
 </head>
@@ -47,47 +66,163 @@
         </header>
         <article>
             <table>
-                <th>
-                    <tr>
-                        <td>
-                            <div style="margin: 20px;">
-                                <form action="">
-                                    <input type="text" id="search" name="search" style="margin-bottom:10px ;">
+                <tr>
+                    <td style="width: 30%;">
+                        <div style="margin: 0 20px; padding: 0;">
+                            <form action="">
+                                <input type="text" id="search" name="search" style="margin-bottom:10px ;">
+                            </form>
+                            <label for="search">Quick search</label>
+                            <button style="background-color: blue; border: 0; margin-left: 20px;">go</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
 
 
-                                </form>
-                                <label for="search">Quick search</label>
-                                <button style="background-color: blue; border: 0; margin-left: 20px;">go</button>
-                            </div>
-                        </td>
+                    <td>
+                        <h2>Scott Pearson's Profile (this is you)</h2>
 
-                        <td>
-                            <h2>jfsdn</h2>
+                        <table style=" margin-top: 20px; width: 100%;">
+                            <tr>
+                                <th>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <h2>
+                                                    Picture</h2>
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz5GAbr89C-n2nCvBrjZZkHEtwZwlg-S96Lg&s"
+                                                    alt="">
+                                            </td>
+                                        </tr>
 
-                            <table>
-                                <tr>
-                                    <td>
-                                        <h2>picture</h2>
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz5GAbr89C-n2nCvBrjZZkHEtwZwlg-S96Lg&s"
-                                            alt="">
-                                    </td>
-                                    <td>
-                                        <h2>information</h2>
-                                    </td>
-                                </tr>
-                                <tr>
+                                        <tr>
+                                            <td><a href="">Visual My friends</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">Visual My friends</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">Visual My friends</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">Visual My friends</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h2>Conection</h2>
+                                                <p>this is you</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h2>Access</h2>
+                                                <p>Scott is currently logged in form a mom-residentail location.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h2>Other schools</h2>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </th>
+                                <th style="width:500px;">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <div class="info-head">
+                                                    <h2>information</h2>
+                                                </div>
+                                                <div class="info-body">
+                                                    <div class="info-body-left
+                                                " style="text-align: left;">
 
-                                <tr>
-                                    <td>
-                                        dwe
-                                    </td>
-                                </tr>
-                                <td>my fr</td>
-                    </tr>
-                    <tr>
-                        <td>my fr</td>
+                                                        <h4>
+                                                            Account Info
+                                                        </h4>
+                                                        <ll>
+                                                            <li>Name:</li>
+                                                            <li>Member Since:</li>
+                                                            <li>Last Update:</li>
+                                                        </ll>
+                                                        <h3>
+                                                            Basic info
+                                                        </h3>
+                                                        <ll>
+                                                            <li>Email</li>
+                                                            <li>Status:</li>
+                                                            <li>Sex:</li>
+                                                            <li>Year:</li>
+                                                            <li>Concentrabon:</li>
+                                                            <li>Phone:</li>
+                                                            <li>High School:</li>
+                                                        </ll>
+                                                        <h3>
+                                                            Extended Info
+                                                        </h3>
+                                                        <ll>
+                                                            <li>Screen Name:</li>
+                                                            <li>Lookimg for:</li>
+                                                            <li>Interested In:</li>
+                                                            <li>Relationship Status:</li>
+                                                            <li>Poltical Views:</li>
+                                                            <li>Interests:</li>
+                                                        </ll>
 
-                    </tr>
+                                                    </div>
+                                                    <div class="info-body-right
+                                                                                                "
+                                                        style="text-align: left;">
+
+                                                        <h4>
+                                                            Account Info
+                                                        </h4>
+                                                        <ll>
+                                                            <li>Name:</li>
+                                                            <li>Member Since:</li>
+                                                            <li>Last Update:</li>
+                                                        </ll>
+                                                        <h3>
+                                                            Basic info
+                                                        </h3>
+                                                        <ll>
+                                                            <li>Email</li>
+                                                            <li>Status:</li>
+                                                            <li>Sex:</li>
+                                                            <li>Year:</li>
+                                                            <li>Concentrabon:</li>
+                                                            <li>Phone:</li>
+                                                            <li>High School:</li>
+                                                        </ll>
+                                                        <h3>
+                                                            Extended Info
+                                                        </h3>
+                                                        <ll>
+                                                            <li>Screen Name:</li>
+                                                            <li>Lookimg for:</li>
+                                                            <li>Interested In:</li>
+                                                            <li>Relationship Status:</li>
+                                                            <li>Poltical Views:</li>
+                                                            <li>Interests:</li>
+                                                        </ll>
+
+                                                    </div>
+                                                </div>
+
+
+
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                                </th>
+                            </tr>
+                    </td>
+                </tr>
+
+
+
 
             </table>
 
@@ -95,7 +230,7 @@
             </td>
 
             </tr>
-            <tr style="padding: 100px;">
+            <tr style="padding: 100px; border: 1px dashed #808080;">
                 <td>
                     <p><a href="">My Profile</a></p>
                     <p><a href="">My Groups</a></p>
