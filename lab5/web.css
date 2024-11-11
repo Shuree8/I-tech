@@ -1,20 +1,432 @@
 * {
   box-sizing: border-box;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Tilt+Neon&display=swap");
+
 body {
-  margin: 0;
-  font-family: "poppins", sans-serif;
+  margin: auto;
+  width: 1000px;
   font-size: 16px;
+  height: auto;
+  background-color: #000;
+  /* background-attachment: scroll; */
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+p {
+  font-size: 12px;
+}
+/* header start */
+header {
+  background-color: #352ba5;
+}
+header a {
+  padding: 50px 30px;
+  text-decoration: none;
+  color: white;
+}
+/* header end */
+
+/* container start */
+.container {
+  background-color: #fff;
 }
 
-header a {
-  padding-left: 10px;
-  text-decoration: none;
-}
-.container {
-  margin: 50px;
+.container article {
+  padding: 20px 50px;
 }
 .container nav {
   background-color: #1b1b6c;
   color: white;
+  padding: 0px 10px 50px 50px;
+}
+.container nav h1 {
+  font-size: 40px;
+  margin: 0;
+  padding: 50px 0 10px 0;
+}
+.container nav a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  background-color: #f61067;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+.container nav a:hover {
+  color: #1b1b6c;
+}
+.container p {
+  font-size: 12px;
+}
+/* container end */
+
+/* article start */
+/* article-section */
+article {
+  display: flex;
+}
+article section {
+  margin-right: 50px;
+  width: 70%;
+}
+article section h2 {
+  padding: 20px 0;
+  border-bottom: 2px solid #9090a5;
+}
+article section p {
+  padding: 30px 0px;
+}
+.fa-exclamation {
+  background-color: #fff;
+  color: #9090a5;
+  border-radius: 50%;
+  padding: 2px 5px;
+  margin: 0 8px;
+  font-size: 8px;
+}
+/* article section end */
+
+/* article aside start */
+article aside {
+  width: 30%;
+  margin-top: 50px;
+}
+.messages {
+  background-color: #f61067;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 10px;
+}
+.messages a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.messages i {
+  margin-right: 5px;
+}
+.fa-3 {
+  background-color: rgb(62, 62, 203);
+  border-radius: 50%;
+  padding: 4px;
+  margin-left: 4px;
+  font-size: 8px;
+}
+.Candidate {
+  color: #fff;
+}
+.Candidate h3 {
+  background-color: #9090a5;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 0;
+}
+.aside-body {
+  background-color: #1b1b6c;
+  margin-top: 0;
+}
+.aside-body form input {
+  /* width: 80%; */
+  background-color: #352ba5;
+  padding: 5px;
+  margin: 3px 10px;
+  width: 95%;
+  border-top: 2px solid #9090a5;
+  border-bottom: 3px solid #9090a5;
+  border-left: 0;
+  border-right: 0;
+  color: #9090a5;
+}
+.aside-body p {
+  margin: 0;
+  padding: 10px;
+}
+.aside-body button {
+  background-color: #f61067;
+  color: #fff;
+  border: 0;
+  padding: 5px;
+  margin: 5px 10px;
+  width: 95%;
+}
+.aside-body button:hover {
+  background-color: #fff;
+  border: 1px solid #f61067;
+  color: #f61067;
+}
+
+.candidat-ftr {
+  font-size: 10px;
+  text-align: center;
+  background-color: #352ba5;
+  padding: 15px;
+}
+.candidat-ftr a {
+  color: #fff;
+}
+.vote {
+  border: 1px solid #9090a5;
+  margin-top: 20px;
+}
+.vote p {
+  margin: 10px;
+}
+.btn {
+  display: flex-box;
+  justify-content: space-around;
+  padding: 8px auto;
+  width: 40%;
+  margin-left: 10px;
+}
+.left-btn:hover {
+  color: #f61067;
+  background-color: #fff;
+  border: 2px solid #f61067;
+}
+.left-btn {
+  background-color: #f61067;
+  color: #fff;
+  border: 0;
+}
+.right-btn {
+  /* background-color: #fff; */
+  border: 2px solid #2ad392;
+  color: #2ad392;
+}
+.right-btn:hover {
+  background-color: #2ad392;
+  color: #fff;
+}
+/* article aside end */
+.dood {
+  background-color: #9090a5;
+  padding: 15px;
+  color: #fff;
+}
+/* article end */
+/* footer start */
+footer {
+  background-color: #1b1b6c;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 450px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: auto;
+    font-size: 16px;
+    width: 90%;
+    background-color: #000;
+    /* background-attachment: scroll; */
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  p {
+    font-size: 12px;
+  }
+  /* header start */
+  header {
+    background-color: #352ba5;
+  }
+  header a {
+    padding: 50px 30px;
+    text-decoration: none;
+    color: white;
+  }
+  /* header end */
+
+  /* container start */
+  .container {
+    background-color: #fff;
+  }
+
+  .container article {
+    padding: 20px 50px;
+  }
+  .container nav {
+    background-color: #1b1b6c;
+    color: white;
+    padding: 0px 10px 50px 50px;
+  }
+  .container nav h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 50px 0 10px 0;
+  }
+  .container nav a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: #f61067;
+    padding: 5px 10px;
+    text-transform: uppercase;
+  }
+  .container nav a:hover {
+    color: #1b1b6c;
+  }
+  .container p {
+    font-size: 12px;
+  }
+  /* container end */
+
+  /* article start */
+  /* article-section */
+  article {
+    display: flex;
+  }
+  article section {
+    margin-right: 50px;
+    width: 70%;
+  }
+  article section h2 {
+    padding: 20px 0;
+    border-bottom: 2px solid #9090a5;
+  }
+  article section p {
+    padding: 30px 0px;
+  }
+  .fa-exclamation {
+    background-color: #fff;
+    color: #9090a5;
+    border-radius: 50%;
+    padding: 2px 5px;
+    margin: 0 8px;
+    font-size: 8px;
+  }
+  /* article section end */
+
+  /* article aside start */
+  article aside {
+    width: 30%;
+    margin-top: 50px;
+  }
+  .messages {
+    background-color: #f61067;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 10px;
+  }
+  .messages a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .messages i {
+    margin-right: 5px;
+  }
+  .fa-3 {
+    background-color: rgb(62, 62, 203);
+    border-radius: 50%;
+    padding: 4px;
+    margin-left: 4px;
+    font-size: 8px;
+  }
+  .Candidate {
+    color: #fff;
+  }
+  .Candidate h3 {
+    background-color: #9090a5;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  .aside-body {
+    background-color: #1b1b6c;
+    margin-top: 0;
+  }
+  .aside-body form input {
+    /* width: 80%; */
+    background-color: #352ba5;
+    padding: 5px;
+    margin: 3px 10px;
+    width: 80%;
+    border-top: 2px solid #9090a5;
+    border-bottom: 3px solid #9090a5;
+    border-left: 0;
+    border-right: 0;
+    color: #9090a5;
+  }
+  .aside-body p {
+    margin: 0;
+    padding: 10px;
+  }
+  .aside-body button {
+    background-color: #f61067;
+    color: #fff;
+    border: 0;
+    padding: 5px;
+    margin: 5px 10px;
+    width: 80%;
+  }
+  .aside-body button:hover {
+    background-color: #fff;
+    border: 1px solid #f61067;
+    color: #f61067;
+  }
+
+  .candidat-ftr {
+    font-size: 10px;
+    text-align: center;
+    background-color: #352ba5;
+    padding: 15px;
+  }
+  .candidat-ftr a {
+    color: #fff;
+  }
+  .vote {
+    border: 1px solid #9090a5;
+    margin-top: 20px;
+  }
+  .vote p {
+    margin: 10px;
+  }
+  .btn {
+    display: flex-box;
+    justify-content: space-around;
+    padding: 8px auto;
+    width: 40%;
+    margin-left: 10px;
+  }
+  .left-btn:hover {
+    color: #f61067;
+    background-color: #fff;
+    border: 2px solid #f61067;
+  }
+  .left-btn {
+    background-color: #f61067;
+    color: #fff;
+    border: 0;
+  }
+  .right-btn {
+    /* background-color: #fff; */
+    border: 2px solid #2ad392;
+    color: #2ad392;
+  }
+  .right-btn:hover {
+    background-color: #2ad392;
+    color: #fff;
+  }
+  /* article aside end */
+  .dood {
+    background-color: #9090a5;
+    padding: 15px;
+    color: #fff;
+  }
+  /* article end */
+  /* footer start */
+  footer {
+    background-color: #1b1b6c;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 12px;
+  }
 }
