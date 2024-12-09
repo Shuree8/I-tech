@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+.cv {
+  background-color: brown;
+  display: flex;
+}
