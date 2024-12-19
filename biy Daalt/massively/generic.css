@@ -1,0 +1,106 @@
+.first-section {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0 150px;
+}
+
+.first-section span {
+    padding: 10px 0 100px 0;
+    font-style: italic;
+}
+
+.first-section h1 {
+    margin: 50px 0;
+    font-weight: 800;
+    font-size: 70px;
+    letter-spacing: 5px;
+    padding: 0 150px;
+}
+.first-section h1:hover {
+    color: #18bfef;
+}
+.text {
+    padding: 0 280px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Merriweather", Georgia, serif;
+    font-weight: 100;
+    margin-bottom: 80px;
+    font-size: 20px;
+}
+/* .text-section{
+    box-sizing: content-box;
+} */
+.text-section p {
+    line-height: 50px;
+    margin-bottom: 50px; 
+    font-size: 24px;
+    text-align: justify;
+    
+}
+
+.first-section img {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.first-section img:hover {
+    transition: all .5s;
+    transform: scale(1.05);
+}
+@media screen and (max-width:660px) {
+    .first-section {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 100px 0 150px;
+        }
+    
+        .first-section span {
+            padding: 10px 0 100px 0;
+            font-style: italic;
+        }
+    
+        .first-section h1 {
+            margin: 50px 0;
+            font-weight: 800;
+            font-size: 40px;
+            letter-spacing: 5px;
+            padding: 0 30px;
+        }
+    
+        .first-section h1:hover {
+            color: #18bfef;
+        }
+    
+        .text {
+            padding: 0 30px;
+            text-align: center;
+            font-style: italic;
+            font-family: "Merriweather", Georgia, serif;
+            font-weight: 100;
+            margin-bottom: 80px;
+            font-size: 20px;
+        }
+    
+        /* .text-section{
+        box-sizing: content-box;
+    } */
+        .text-section p {
+            line-height: 50px;
+            margin-bottom: 50px;
+            font-size: 24px;
+            text-align: justify;
+    
+        }
+    
+        .first-section img {
+            width: 100%;
+            margin-bottom: 100px;
+        }
+    
+        .first-section img:hover {
+            transition: all .5s;
+            transform: scale(1.05)
+}
