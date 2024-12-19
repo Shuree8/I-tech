@@ -86,7 +86,7 @@ h1 {
 }
 
 .first-page {
-  background-image: url("https://i.pinimg.com/736x/c0/3d/0b/c03d0bfc73cbf926466794180a45a5a0.jpg");
+  background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-50-holiday-delivery-pickup-202411?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=1728401800980");
   color: #000;
   background-size: cover;
   /* background-attachment: scroll; */
@@ -110,7 +110,6 @@ h1 {
   width: 100%;
 }
 .page-four-right {
-  background-color: aquamarine;
   margin: 10px;
   height: 60vh;
 }
@@ -128,4 +127,10 @@ h1 {
 .navbar a {
   padding-left: 20px;
   color: #000;
+}
+.small-page1 {
+  background-image: (
+    "https://www.google.com/imgres?q=iphone%2016&imgurl=https%3A%2F%2Fwww.apple.com%2Fnewsroom%2Fimages%2F2024%2F09%2Fapple-introduces-iphone-16-and-iphone-16-plus%2Farticle%2FApple-iPhone-16-hero-240909_inline.jpg.large.jpg&imgrefurl=https%3A%2F%2Fwww.apple.com%2Fnewsroom%2F2024%2F09%2Fapple-introduces-iphone-16-and-iphone-16-plus%2F&docid=G5zl6QLHQEe99M&tbnid=5qBXzJ4a8qnc3M&vet=12ahUKEwiVhbD41LOKAxXjcPUHHQtYBNcQM3oECBcQAA..i&w=653&h=914&hcb=2&itg=1&ved=2ahUKEwiVhbD41LOKAxXjcPUHHQtYBNcQM3oECBcQAA"
+  );
+  background-repeat: no-repeat;
 }
