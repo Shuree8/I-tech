@@ -12,4 +12,4 @@ function tootOloh (haalganiToo){
     return `Орц ${ortsniiToo}, давхар ${dawhariinToo} хаалга ${haalganiiToot}`;
 
 }
-console.log(tootOloh(0));
+console.log(tootOloh(10));

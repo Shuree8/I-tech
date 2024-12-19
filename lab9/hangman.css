@@ -10,7 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #5e63ba;
+  background-color: #c95beb;
 }
 .container {
   width: 850px;
@@ -78,7 +78,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   border-radius: 4px;
-  background: #5e63ba;
+  background: #c95beb;
   border: none;
 }
 .keyboard button {
@@ -90,7 +90,7 @@ body {
   pointer-events: none;
 }
 :where(.game-modal, .keyboard) button:hover {
-  background: #8286c9;
+  background: #ce79e8;
 }
 
 .game-modal {

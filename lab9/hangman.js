@@ -29,7 +29,7 @@ const wordList = [
 
 
 let currentWord, correctLetter = [], wrongGuessCount ;
-const maxGuesses =5;
+const maxGuesses = 5;
 
 const resetGame = () => {
     correctLetter = [];
@@ -60,7 +60,7 @@ const gameOver = (isVictory) => {
 const initGame = ( button, clickedLetter) => {
     if(currentWord.includes(clickedLetter)){
         
-        [currentWord].forEach((letters, index) => {
+        [...currentWord].forEach((letters, index) => {
             if(letters === clickedLetter) {
                 correctLetter.push(letters);
                 wordDisplay.querySelectorAll("li")[index].innerText = letters;
