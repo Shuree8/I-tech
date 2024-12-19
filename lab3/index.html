@@ -8,27 +8,38 @@
     <style>
         body {
             width: 800px;
+
         }
 
         table {
             width: 100%;
+            margin: 0;
         }
 
         td {
-            border: 1px solid black;
+
+            margin: 0;
+        }
+
+        tr {}
+
+        th {
+            border: 1px solid rgb(19, 1, 63);
+
 
         }
 
         a {
             text-decoration: none;
             margin-left: 20px;
-            color: rgb(56, 139, 241);
+            color: #5b70e5;
+
         }
 
         h2 {
             display: block;
-            background-color: aqua;
-            margin: 10px 0 0 0;
+            background-color: #5b70e5;
+            margin: 0;
             width: 100%;
         }
 
@@ -47,19 +58,19 @@
 
     <table>
         <header>
-            <table>
+            <table style="background-color: #5b70e5;">
                 <th>
-                    <div class="head">
+                    <div style="color: aliceblue;">
                         <h1>Facebook</h1>
                     </div>
-                    <div class="head-btn">
-                        <a href="">home</a>
-                        <a href="">search</a>
-                        <a href="">global</a>
-                        <a href="">social net</a>
-                        <a href="">invite</a>
-                        <a href="">faq</a>
-                        <a href="">log out</a>
+                    <div>
+                        <a style="color: aliceblue;" href="">home</a>
+                        <a style="color: aliceblue;" href="">search</a>
+                        <a style="color: aliceblue;" href="">global</a>
+                        <a style="color: aliceblue;" href="">social net</a>
+                        <a style="color: aliceblue;" href="">invite</a>
+                        <a style="color: aliceblue;" href="">faq</a>
+                        <a style="color: aliceblue;" href="">log out</a>
                     </div>
                 </th>
             </table>
@@ -71,46 +82,68 @@
 
 
                 <tr>
-                    <td style="width: 30%;">
-                        <div style="margin: 0 20px; padding: 0;">
-                            <form action="">
-                                <input type="text" id="search" name="search" style="margin-bottom:10px ;">
-                            </form>
-                            <label for="search">Quick search</label>
-                            <button style="background-color: blue; border: 0; margin-left: 20px;">go</button>
-                        </div>
-                    </td>
+                    <th>
 
-
-
-
-
-                    <td>
-                        <h2>Scott Pearson's Profile (this is you)</h2>
-                        <table style=" margin-top: 20px; width: 100%;">
+                        <table>
+                            <tr style="border: 1px dashed grey;">
+                                <td style="margin: 0; padding: 0; border: 1px dashed grey;">
+                                    <form action="">
+                                        <input type="text" id="search" name="search" style="margin-bottom:10px ;">
+                                    </form>
+                                    <label for="search">Quick search</label>
+                                    <button
+                                        style="background-color: blue; border: 0; border-radius: 3px; margin-left: 10px;">go</button>
+                                </td>
+                            </tr>
                             <tr>
-                                <th>
+                                <td style="border: 1px dashed grey;">
+                                    <p><a href="">My Profile</a></p>
+                                    <p><a href="">My Groups</a></p>
+                                    <p><a href="">My Friends</a></p>
+                                    <p><a href="">My Messages</a></p>
+                                    <p><a href="">My Away Message</a></p>
+                                    <p><a href="">My Mobile Info</a></p>
+                                    <p><a href="">My Account</a></p>
+                                    <p><a href="">My Privacy</a></p>
+
+                                </td>
+                            </tr>
+                        </table>
+
+                    </th>
+
+
+
+
+
+
+
+                    <th>
+                        <h2>Scott Pearson's Profile (this is you)</h2>
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>
                                     <table>
                                         <tr>
-                                            <td>
-                                                <h2>
-                                                    Picture</h2>
-                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz5GAbr89C-n2nCvBrjZZkHEtwZwlg-S96Lg&s"
-                                                    alt="">
-                                            </td>
+
+                                            <h2>
+                                                Picture</h2>
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz5GAbr89C-n2nCvBrjZZkHEtwZwlg-S96Lg&s"
+                                                alt="">
+
                                         </tr>
 
                                         <tr>
                                             <td><a href="">Visual My friends</a></td>
                                         </tr>
                                         <tr>
-                                            <td><a href="">Visual My friends</a></td>
+                                            <td><a href="">Edit my profile</a></td>
                                         </tr>
                                         <tr>
-                                            <td><a href="">Visual My friends</a></td>
+                                            <td><a href="">My account preferences</a></td>
                                         </tr>
                                         <tr>
-                                            <td><a href="">Visual My friends</a></td>
+                                            <td><a href="">My privacy preference</a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -130,8 +163,8 @@
                                             </td>
                                         </tr>
                                     </table>
-                                </th>
-                                <th style="width:500px;">
+                                </td>
+                                <td style="width:600px;">
                                     <table>
                                         <tr>
                                             <td>
@@ -140,13 +173,14 @@
                                                 </div>
                                                 <div class="info-body">
                                                     <div class="info-body-left
-                                                " style="text-align: left;">
+                                                                                "
+                                                        style="text-align: left; width: 50%;">
 
                                                         <h4>
                                                             Account Info
                                                         </h4>
                                                         <ll>
-                                                            <li>Name:</li>
+                                                            <li>Name: </li>
                                                             <li>Member Since:</li>
                                                             <li>Last Update:</li>
                                                         </ll>
@@ -175,40 +209,39 @@
                                                         </ll>
 
                                                     </div>
-                                                    <div class="info-body-right
-                                                                                                "
-                                                        style="text-align: left;">
+                                                    <div class="info-body-right" style="text-align: left;width: 50%;">
 
                                                         <h4>
-                                                            Account Info
+                                                            <span> <br></span>
                                                         </h4>
                                                         <ll>
-                                                            <li>Name:</li>
-                                                            <li>Member Since:</li>
-                                                            <li>Last Update:</li>
+
+                                                            <li>Scott Pearson</li>
+                                                            <li>January 12, 2005</li>
+                                                            <li>Fedruary 3, 2005</li>
                                                         </ll>
                                                         <h3>
-                                                            Basic info
+                                                            <span><br></span>
                                                         </h3>
                                                         <ll>
-                                                            <li>Email</li>
-                                                            <li>Status:</li>
-                                                            <li>Sex:</li>
-                                                            <li>Year:</li>
-                                                            <li>Concentrabon:</li>
-                                                            <li>Phone:</li>
-                                                            <li>High School:</li>
+                                                            <li>12345678qwe@gmail.com</li>
+                                                            <li>Alumnus</li>
+                                                            <li>Male</li>
+                                                            <li>2004</li>
+                                                            <li>Computer Science</li>
+                                                            <li>570.499.48.18</li>
+                                                            <li>Dunmore HS100</li>
                                                         </ll>
                                                         <h3>
-                                                            Extended Info
+                                                            <span><br></span>
                                                         </h3>
                                                         <ll>
-                                                            <li>Screen Name:</li>
-                                                            <li>Lookimg for:</li>
-                                                            <li>Interested In:</li>
-                                                            <li>Relationship Status:</li>
-                                                            <li>Poltical Views:</li>
-                                                            <li>Interests:</li>
+                                                            <li>ScottPP7</li>
+                                                            <li>Freindship dating</li>
+                                                            <li>Woman</li>
+                                                            <li>Single</li>
+                                                            <li>Liberal</li>
+                                                            <li>Football</li>
                                                         </ll>
 
                                                     </div>
@@ -220,11 +253,13 @@
 
                                         </tr>
                                     </table>
-                                </th>
-                            </tr>
-                        </table>
-                    </td>
+                                </td>
 
+                            </tr>
+
+                        </table>
+                    </th>
+                </tr>
 
 
 
@@ -233,23 +268,9 @@
             </table>
 
 
-            </td>
 
-            </tr>
-            <tr style="padding: 100px; border: 1px dashed #808080;">
-                <td>
-                    <p><a href="">My Profile</a></p>
-                    <p><a href="">My Groups</a></p>
-                    <p><a href="">My Friends</a></p>
-                    <p><a href="">My Messages</a></p>
-                    <p><a href="">My Away Message</a></p>
-                    <p><a href="">My Mobile Info</a></p>
-                    <p><a href="">My Account</a></p>
-                    <p><a href="">My Privacy</a></p>
 
-                </td>
-            </tr>
-            </th>
+
 
 
     </table>

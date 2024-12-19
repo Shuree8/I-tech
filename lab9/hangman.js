@@ -1,32 +1,58 @@
-const hangmanImg = document.querySelector(".hangman-box");
+
 const wordDisplay = document.querySelector(".word-display");
 const guessesText = document.querySelector(".incorrect b");
 const keyboardDiv = document.querySelector(".keyboard");
 const gameModal = document.querySelector(".game-modal");
+const playAgain = document.querySelector(".play-again");
 const wordList = [
     {
-        word: "nfbdhbf",
-        hint: "hsbchbdvhcbdvhu"
-    }
+        word: "CSS",
+        hint: "Cascading Style Sheet"
+    },
+    {
+        word: "undefined",
+        hint: "Утгагүй хувьсагчийг тодорхойлоход хэрэглэгддэг."
+    },
+    {
+        word: "function",
+        hint: "Javascript-д функц зарлах түлхүүр үг"
+    },
+    {
+        word: "null",
+        hint: "Утгагүй гэсэн санааг илэрхийлнэ"
+    },
+    {
+        word: "return",
+        hint: "JavaScript-д хэрхэн функц доторх хувьсагчийг буцаах вэ?"
+    },
 ]
 
 
-let currentWord, correctLetter = [], wrongGuessCount = 0;
+let currentWord, correctLetter = [], wrongGuessCount ;
 const maxGuesses =5;
 
+const resetGame = () => {
+    correctLetter = [];
+    wrongGuessCount = 0
+    guessesText.innerText = `${wrongGuessCount}/${maxGuesses}`;
+    keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
+    wordDisplay.innerHTML = currentWord.split("").map(() => `<li class="letters"></li>`).join("");
+    gameModal.classList.remove("show");
+    
+}
 
 function getRandomWord(){
     const {word, hint} = wordList[Math.floor(Math.random()*wordList.length)];
-     currentWord = word;
+    currentWord = word;
     console.log(word);
     document.querySelector(".hint-text b").innerText = hint;
-    wordDisplay.innerHTML = word.split("").map(() => `<li class="letters"></li>`).join("");
+    resetGame();
 
 }
 const gameOver = (isVictory) => {
     setTimeout(() => {
-        const modalText = isVictory ? `You found the:`: `the correct word was:` ;
-        gameModal.querySelector("h4").innerText = `${isVictory ? 'Congrats !' : 'Game Over !'}`;
+        const modalText = isVictory ? `Таны олсон үг:`: `Зөв байсан үг:` ;
+        gameModal.querySelector("h4").innerText = `${isVictory ? 'Баяр хүргэе !' : 'Хожигдолт !'}`;
         gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
         gameModal.classList.add("show");
     })
@@ -36,7 +62,7 @@ const initGame = ( button, clickedLetter) => {
         
         [...currentWord].forEach((letters, index) => {
             if(letters === clickedLetter) {
-                correctLetter.push();
+                correctLetter.push(letters);
                 wordDisplay.querySelectorAll("li")[index].innerText = letters;
                 wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
 
@@ -61,3 +87,4 @@ for (let i = 97; i <= 122; i++){
 
 }
 getRandomWord();
+playAgain.addEventListener("click", getRandomWord );

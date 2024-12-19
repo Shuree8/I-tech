@@ -18,7 +18,7 @@ body {
 p {
   font-size: 12px;
 }
-/* header start */
+
 header {
   background-color: #352ba5;
 }
@@ -27,9 +27,7 @@ header a {
   text-decoration: none;
   color: white;
 }
-/* header end */
 
-/* container start */
 .container {
   background-color: #fff;
 }
@@ -61,10 +59,7 @@ header a {
 .container p {
   font-size: 12px;
 }
-/* container end */
 
-/* article start */
-/* article-section */
 article {
   display: flex;
 }
@@ -87,9 +82,7 @@ article section p {
   margin: 0 8px;
   font-size: 8px;
 }
-/* article section end */
 
-/* article aside start */
 article aside {
   width: 30%;
   margin-top: 50px;
@@ -200,14 +193,13 @@ article aside {
   background-color: #2ad392;
   color: #fff;
 }
-/* article aside end */
+
 .dood {
   background-color: #9090a5;
   padding: 15px;
   color: #fff;
 }
-/* article end */
-/* footer start */
+
 footer {
   background-color: #1b1b6c;
   padding: 10px 30px;

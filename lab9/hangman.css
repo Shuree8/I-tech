@@ -48,13 +48,13 @@ body {
   border-color: transparent;
   margin: -40px 0 35px;
 }
-.game-box h4 {
+.game-box h3 {
   text-align: center;
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 15px;
 }
-.game-box h4 b {
+.game-box h3 b {
   font-weight: 600;
 }
 .incorrect {
