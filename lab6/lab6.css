@@ -35,13 +35,10 @@ h1 {
   width: 100vw;
   height: 80vh;
   color: #fff;
-
   margin-bottom: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100vw;
-  height: 80vh;
 }
 .page {
   margin: auto;
@@ -128,9 +125,9 @@ h1 {
   padding-left: 20px;
   color: #000;
 }
+
 .small-page1 {
-  background-image: (
-    "https://www.google.com/imgres?q=iphone%2016&imgurl=https%3A%2F%2Fwww.apple.com%2Fnewsroom%2Fimages%2F2024%2F09%2Fapple-introduces-iphone-16-and-iphone-16-plus%2Farticle%2FApple-iPhone-16-hero-240909_inline.jpg.large.jpg&imgrefurl=https%3A%2F%2Fwww.apple.com%2Fnewsroom%2F2024%2F09%2Fapple-introduces-iphone-16-and-iphone-16-plus%2F&docid=G5zl6QLHQEe99M&tbnid=5qBXzJ4a8qnc3M&vet=12ahUKEwiVhbD41LOKAxXjcPUHHQtYBNcQM3oECBcQAA..i&w=653&h=914&hcb=2&itg=1&ved=2ahUKEwiVhbD41LOKAxXjcPUHHQtYBNcQM3oECBcQAA"
-  );
-  background-repeat: no-repeat;
+  background-image: url("https://i.pinimg.com/236x/fa/b7/51/fab751b278e50daebe6da3b28d8f1f86.jpg");
+  background-size: cover;
+  background-position: center;
 }
