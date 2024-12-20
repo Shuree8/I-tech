@@ -6,7 +6,7 @@ const gameModal = document.querySelector(".game-modal");
 const playAgain = document.querySelector(".play-again");
 const wordList = [
     {
-        word: "Ulemj",
+        word: "ulemj",
         hint: "Таны нэр хэн бэ"
     },
     {
