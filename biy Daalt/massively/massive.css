@@ -89,7 +89,6 @@
 }
 .second-section {
   display: flex;
-  flex-wrap: wrap;
 }
 .left {
   border: 2px solid rgb(187, 187, 187);
