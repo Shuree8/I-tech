@@ -6,24 +6,24 @@ const gameModal = document.querySelector(".game-modal");
 const playAgain = document.querySelector(".play-again");
 const wordList = [
     {
-        word: "CSS",
-        hint: "Cascading Style Sheet"
+        word: "Ulemj",
+        hint: "Таны нэр хэн бэ"
     },
     {
-        word: "undefined",
-        hint: "Утгагүй хувьсагчийг тодорхойлоход хэрэглэгддэг."
+        word: "purple",
+        hint: "Таны дуртай өнгө."
     },
     {
-        word: "function",
-        hint: "Javascript-д функц зарлах түлхүүр үг"
+        word: "uhna",
+        hint: "ямааны аавыг юу гэдэг юэ"
     },
     {
-        word: "null",
-        hint: "Утгагүй гэсэн санааг илэрхийлнэ"
+        word: "jeans",
+        hint: "Өнөөдөр Шүрээ ямар өмдтэй байсан бэ "
     },
     {
-        word: "return",
-        hint: "JavaScript-д хэрхэн функц доторх хувьсагчийг буцаах вэ?"
+        word: "beer",
+        hint: "Таны ч дуртай Шүрээгийн ч дуртай хүн болгоны дуртай зүйл юу вэ"
     },
 ]
 
